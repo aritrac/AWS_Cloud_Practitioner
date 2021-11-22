@@ -1,0 +1,391 @@
+->  A designated Technical Account Manager is available only for Enterprise support plans
+
+->  Access to the 7 core Trusted Advisor checks, and guidance to resources provision following best practices to 
+    increase performance and improve security are part of Basic and Developer support plans
+
+->  AWS Concierge is available for only Enterprise support plan
+
+->  Business Support Plan is the MOST cost-effective when getting enhanced technical support by Cloud Support Engineers
+
+->  Contextual guidance on how services fit together to meet your specific use-case, workload, or application is part of Business support plans
+
+->  AWS Infrastructure Event Management is a short-term engagement with AWS Support, available as part of the Enterprise-level Support product 
+    offering, and available for additional purchase for Business-level Support subscribers
+    AWS Infrastructure Event Management partners with your technical and project resources to gain a deep understanding of your use case 
+    and provide architectural and scaling guidance for an event
+
+->  All traffic between AZs is encrypted.
+
+->  Each AWS Region consists of multiple, isolated and physically separate AZs within a geographic area.
+
+->  AWS has the concept of a Region, which is a physical location around the world where we cluster data centers. 
+    AWS calls each group of logical data centers an Availability Zone. Each AWS Region consists of multiple, isolated, 
+    and physically separate AZ's within a geographic area
+
+->  AWS QuickSight is serverless BI tool.
+
+->  AWS is responsible for patching and fixing flaws within the infrastructure, but customers are responsible for patching their guest OS and applications
+
+->  AWS trains AWS employees, but a customer must train their own employees
+
+->  Tags - To help you manage your instances, images, and other Amazon EC2 resources, you can assign your own metadata to each resource in the form of tags
+
+->  Abusive behaviour includes : Spam, Port Scanning, DOS attacks, Intrusion Attempts, Hosting objectionable or copyrighted content, distributing malware.
+
+->  IaaS: EC2 instances
+
+->  SaaS: web-based email service
+
+->  Customer master keys are the primary resources in AWS KMS. A customer master key (CMK) is a logical representation of a master key. The CMK includes metadata, 
+    such as the key ID, creation date, description, and key state. The CMK also contains the key material used to encrypt and decrypt data
+
+->  Customer managed CMKs are CMKs in your AWS account that you create, own, and manage. You have full control over these CMKs, including establishing and maintaining 
+    their key policies, IAM policies, and grants, enabling and disabling them, rotating their cryptographic material, adding tags, creating aliases that refer to the CMK, 
+    and scheduling the CMKs for deletion
+    A customer master key (CMK) is a logical representation of a master key. The CMK includes metadata, such as the key ID, creation date, description, and key state. 
+    The CMK also contains the key material used to encrypt and decrypt data. These are created and managed by the AWS customer. Access to these can be controlled using the AWS IAM service.
+
+->  AWS Managed CMK - AWS managed CMKs are CMKs in your account that are created, managed, and used on your behalf by an AWS service that is integrated with AWS KMS.
+
+->  AWS Owned CMK - AWS owned CMKs are a collection of CMKs that an AWS service owns and manages for use in multiple AWS accounts. AWS owned CMKs are not in your AWS account. 
+    You cannot view or manage these CMKs.
+
+->  You specify an AWS Region when you create your Amazon S3 bucket and hence the S3 buckets are region-specific
+
+->  Snowmobile is a region specific service
+
+->  Cloudtrail logs, S3 Glacier and AWS Storage Gateway is encrypted by default.
+
+->  Using DynamoDBAccelerator can provide better read heavy performance for Amazon DynamoDB
+
+->  Types of EC2 Instance Types: Memory optimized, Compute Optimized, Storage optimized and Accelerated computing instance types.
+
+->  By default only management events are recorded in cloudtrail.
+
+->  Cloudtrail has 3 event types that can be logged -> Management, Data Events and Insight events.
+
+->  While AWS Config helps you answer questions like - “What did my AWS resource look like?” at a point in time. 
+    You can use AWS CloudTrail to answer “Who made an API call to modify this resource?”
+
+->  Amazon S3 Intelligent-Tiering (S3 Intelligent-Tiering) is the only cloud storage class that delivers automatic cost savings by moving objects 
+    between four access tiers when access patterns change
+
+->  S3 Standard offers high durability, availability, and performance object storage for frequently accessed data
+    S3 Standard has no constraint of a minimum storage duration for objects
+
+->  S3 Standard-IA is for data that is accessed less frequently but requires rapid access when needed
+
+->  By default, data on S3 Glacier is encrypted
+
+->  An availability zone is one or more data centers in the same location.
+
+->  Service control policies (SCPs) are a type of organization policy that you can use to manage permissions in your organization. 
+    SCPs offer central control over the maximum available permissions for all accounts in your organization. SCPs help you to ensure your accounts stay within your organization’s 
+    access control guidelines.
+    SCPs alone are not sufficient to grant permissions to the accounts in your organization. No permissions are granted by an SCP. An SCP defines a guardrail, or sets limits, 
+    on the actions that the account's administrator can delegate to the IAM users and roles in the affected accounts.
+
+->  CodePipeline uses Amazon CloudWatch Events to detect changes in CodeCommit repositories used as a source for a pipeline
+
+->  All AWS customers automatically have 24/7 access to these features of the Basic support plan: 
+    1. One-on-one responses to account and billing questions 
+    2. Support forums 
+    3. Service health checks 
+    4. Documentation, technical papers, and best practice guides
+
+->  Free Services: AWS AutoScaling, AWS Elastic Beanstalk
+
+->  If you create multiple accounts, you can use the Consolidated Billing feature of AWS Organizations to combine all member accounts under a management account and receive a single bill
+
+->  API Gateway can call an AWS Lambda function to create the front door of a serverless application
+
+->  API Gateway can be configured to send data directly to Amazon Kinesis Data Stream
+
+->  API Gateway supports result caching. You can add caching to API calls by provisioning an API Gateway cache and specifying its size in gigabytes
+
+->  API calls are counted equally for billing purposes whether the response is handled by your backend operations or by the Amazon API Gateway caching operation
+
+->  AWS WAF cannot be deployed on Amazon EC2 instances directly
+
+->  The Elastic Beanstalk health monitoring can determine that the environment's Auto Scaling group is available and has a minimum of at least one instance
+
+->  With basic health reporting, the Elastic Beanstalk service does not publish any metrics to Amazon CloudWatch
+
+->  With Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud without having to learn about the infrastructure that runs those applications
+    There is no additional charge for Elastic Beanstalk. You pay only for the underlying AWS resources that your application consumes
+
+->  As part of a flexible pricing model, AWS offers two types of Savings Plans which are Compute Savings Plans, EC2 Instance Savings Plans
+
+->  As part of Amazon S3 pricing model, the following are free:
+        ->Data transferred in from the internet
+        ->Data transferred out to an Amazon Elastic Compute Cloud (Amazon EC2) instance, when the instance is in the same AWS Region as the S3 bucket
+
+->  Different Types Of EC2 Reserved Instances
+        Standard Reserved Instances     ->  Standard Reserved Instances provide you with a significant discount (up to 72%) compared to On-Demand Instance pricing, and can be 
+                                            purchased for a 1-year or 3-year term
+        Convertible Reserved Instances  ->  Purchase Convertible Reserved Instances if you need additional flexibility, such as the ability to use different instance families, 
+                                            operating systems, or tenancies over the Reserved Instance term
+        Reserved Instances provide you with a significant discount (up to 75%) compared to On-Demand instance pricing. Besides, when Reserved Instances are assigned to a specific 
+        Availability Zone, they provide a capacity reservation, giving you additional confidence in your ability to launch instances when you need them.
+        Standard and Convertible reserved instances can be purchased for a 1-year or 3-year term
+        Amazon EC2 Reserved Instances (RI) provide a significant discount (up to 72%) compared to On-Demand pricing and provide a capacity reservation when used in a specific Availability Zone
+
+->  AWS Managed VPN Service     ->  Customer Gateway:   A customer gateway device is a physical or software appliance on your side of a Site-to-Site VPN connection
+                                ->  Virtual Private Gateway:    A virtual private gateway device is a physical or software appliance on AWS side of a Site-to-Site VPN connection
+
+->  An interface VPC endpoint (interface endpoint) enables you to connect to services powered by AWS PrivateLink. It is not a component of a connection between on-premises network and AWS
+
+->  A security group acts as a virtual firewall for your instance to control inbound and outbound traffic
+
+-> AWS Well Architected Framework:  
+    ->Security Pillar 
+        ->  Use AWS KMS to encrypt data.
+        ->  Protect data at transit and at rest.
+        ->  Enable traceability 
+    ->Cost optimization 
+        ->  Using Cost Explorer to view and track your usage in detail relates more to the Cost Optimization pillar
+    ->Reliability 
+        ->  Using Amazon CloudWatch to measure overall efficiency relates more to the Reliability pillar
+        ->  Automatically recover from failure 
+        ->  AWS Service Quotas
+        ->  Amazon VPC
+        ->  Organizational change management with AWS Cloudtrail and AWS Config.
+        ->  AWS Trusted Advisor
+    ->Operational Excellence 
+        ->  Anticipate Failure 
+        ->  Make frequent small reversible changes
+        ->  Ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures
+        ->  Maintaining infrastructure as code
+    ->Performance efficiency 
+        ->  Use serverless architectures.  
+        ->  Making sure that we select the right resource types and sizes based on the workload requirements.      
+
+->  You can use the fleet management features of EC2 Auto Scaling to maintain the health and availability of your fleet. You can also use the dynamic and predictive scaling 
+    features of EC2 Auto Scaling to add or remove EC2 instances.
+    Amazon EC2 Auto Scaling can detect when an instance is unhealthy, terminate it, and replace it with a new one
+
+->  Billing Timeframes:
+    -> Pay per hour 
+        ->When running a Windows EC2 on-demand instance, pay per hour pricing is applied
+    -> Pay per second 
+        -> It is available for Linux EC2 on demand-instances
+    -> Pay per minute , Pay per day
+        -> Not available for any type of on-demand EC2 instances
+
+->  Think of "AWS Cost and Usage Reports" as a cost management tool providing the most detailed cost and usage data for your AWS account. It can provide reports that break down your costs by 
+    the hour into your S3 bucket. On the other hand, "AWS Cost Explorer" is more of a high-level cost management tool that helps you visualize the costs and usage associated with your AWS account.
+
+->  6 Advantages of Cloud Computing 
+    ->  Trade capital expense for variable expense 
+    ->  Benefit from massive economies of scale
+    ->  Stop guessing capacity
+    ->  Increase Speed and Agility -> ability to innovate faster and rapidly develop, test and launch software applications
+    ->  Stop spending money running and maintaining data centers
+    ->  Go global in minutes.
+
+->  Shared Responsibility Model 
+    ->  Firewall and networking configuration in EC2 -> customer Responsibility
+    ->  Security of the cloud -> AWS responsibility 
+    ->  Replacing faulty hardware of Amazon EC2 instances -> AWS responsibility
+    ->  Maintaining Amazon S3 data in different availability zones to keep it durable -> AWS Responsibility
+    ->  Security in the cloud -> customer responsibility
+    ->  AWS is responsible for "Security OF the cloud". It includes the infrastructure, which is composed of the hardware, software, networking, and facilities that run AWS Cloud services
+    ->  Data center security -> AWS responsibility
+    ->  Network operability -> AWS Responsibility
+    ->  Encrypt application data -> customer responsibility
+    ->  Configure IAM roles -> customer responsibility
+    ->  Install security patches of the guest operating system -> customer responsibility
+    ->  Configuration management -> Both
+    ->  Operating system (OS) configuration -> Both
+    ->  Customer Data -> customer responsibility
+    ->  Data Center Security -> AWS responsibility 
+    ->  Disposal of Disk Drives -> AWS responsibility
+    ->  Patching network infrastructure -> AWS responsibility
+    ->  Enable MFA on all accounts -> Customer responsibility 
+    ->  Analyze user access patterns and review IAM permissions -> customer responsibility
+    ->  Maintain versions of a lambda function -> Customer responsibility
+    ->  Enable data encryption of data stored in S3 buckets -> customer responsibility 
+    ->  Operating system patches and updates of an EC2 instance -> customer responsibility 
+    ->  Edge Location Management -> AWS responsibility
+
+->  While the Service Health Dashboard displays the general status of AWS services, Personal Health Dashboard gives you a personalized view of the performance and availability of the AWS 
+    services underlying your AWS resources
+
+->  Data transfer-in is always free, including for EBS volumes
+
+-> PaaS ->  PaaS removes the need to manage underlying infrastructure (usually hardware and operating systems) and allows you to focus on the deployment and management of your applications. 
+            You don’t need to worry about resource procurement, capacity planning, software maintenance, patching, or any of the other undifferentiated heavy lifting involved in running your 
+            application
+
+-> IaaS ->  IaaS contains the basic building blocks for cloud IT. It typically provides access to networking features, computers (virtual or on dedicated hardware), and data storage space. 
+            IaaS gives the highest level of flexibility and management control over IT resources
+
+-> SaaS ->  SaaS provides you with a complete product that is run and managed by the service provider. With a SaaS offering, you don’t have to think about how the service is maintained or 
+            how the underlying infrastructure is managed. You only need to think about how you will use that particular software
+
+-> AWS Support Plans Summary
+    ->  Business:   AWS recommends Business Support if you have production workloads on AWS and want 24x7 phone, email and chat access to technical support and architectural guidance in the context 
+                    of your specific use-cases. You get full access to AWS Trusted Advisor Best Practice Checks. It is also the cheapeast support plan to provide enhanced technical support by Cloud 
+                    Support Engineers.
+                    You get full access to AWS Trusted Advisor Best Practice Checks
+    ->  Developer:  It provides enhanced technical support, but by Cloud Support Associates.
+                    AWS recommends Developer Support if you are testing or doing early development on AWS and want the ability to get email-based technical support during business hours as well as 
+                    general architectural guidance as you build and test. You do not get access to Infrastructure Event Management with this plan
+                    AWS Developer Support plan allows one primary contact to open unlimited cases
+    ->  Basic:      A basic support plan is included for all AWS customers. It does not provide enhanced technical support.
+                    Customer Service & Communities - 24x7 access to customer service, documentation, whitepapers, and support forums. 
+                    AWS Trusted Advisor - Access to the 7 core Trusted Advisor checks and guidance to provision your resources following best practices to increase performance and improve security. 
+                    AWS Personal Health Dashboard - A personalized view of the health of AWS services, and alerts when your resources are impacted
+    ->  Enterprise: AWS Enterprise Support provides customers with concierge-like service where the main focus is helping the customer achieve their outcomes and find success in the cloud.
+                    With Enterprise Support, you get 24x7 technical support from high-quality engineers, tools and technology to automatically manage the health of your environment, 
+                    consultative architectural guidance delivered in the context of your applications and use-cases, and a designated Technical Account Manager (TAM) to coordinate access 
+                    to proactive/preventative programs and AWS subject matter experts. It provides enhanced technical support by Cloud Support Engineers, but is more expensive than the 
+                    Business support plan.
+                    This plan guarantees a case response time of 15 minutes when Business Critical systems are down
+                        General Guidance - < 24 hours
+                        System Impaired - < 12 hours
+                        Production System Impaired - < 4 hours
+                        Production System Down - < 1 hour
+                        Business Critical System Down - <15 min
+                    You get programmatic access (API Access) to AWS Support Center features to create, manage, and close your support cases, and operationally manage your Trusted Advisor check requests and status
+                    Enterprise Support, you get access to online training with self-paced labs
+                    provides access to Infrastructure Event Management for an additional fee
+    ->  AWS Personal Health Dashboard is available across all support plans
+
+-> Best practices for AWS account root user: 
+        -> Enable MFA for the AWS account root user.
+        -> Set up an IAM user with administrator permissions and do not use AWS account root user for administrative tasks
+        -> AWS recommends that if you do have an access key for your AWS account root user
+        -> You cannot reduce the permissions associated with your AWS account root user access key, therefore You should never share these access keys with any other users, not even the administrators
+
+-> Amazon EC2 Spot Instances let you take advantage of unused EC2 capacity in the AWS cloud. Spot Instances are available at up to a 90% discount compared to On-Demand prices
+   It can be used to run any containerized workload with Elastic Container Service (ECS) that can be interrupted 
+   Containers are stateless, fault-tolerant and a great fit for Spot Instances 
+   Spot instance capacity allocated to you can be taken back anytime without notice if AWS needs them. Hence, Spot instances can only be used as additional compute capacity and 
+   not for hosting or installing any software or database.
+   Business-critical workloads cannot be run on Spot instances. 
+   For a scheduled requirement, Scheduled Reserved instances should be used. 
+
+-> EC2 instance user data is the data that you specified in the form of a bootstrap script or configuration parameters while launching your instance
+
+-> EC2 instance metadata is data about your instance that you can use to manage the instance
+
+-> U2F security key: Universal 2nd Factor (U2F) Security Key is a device that you can plug into a USB port on your computer
+
+-> We can use Amazon S3 to host static website. To host a static website on Amazon S3, you configure an Amazon S3 bucket for website hosting and then upload your website content to the bucket. 
+   When you configure a bucket as a static website, you must enable website hosting, set permissions, and create and add an index document
+
+-> Best practices for AWS IAM 
+    Lock away your AWS account root user access keys
+    Create individual IAM users
+    Use user groups to assign permissions to IAM users
+    Grant least privilege
+    Get started using permissions with AWS managed policies
+    Validate your policies
+    Use customer managed policies instead of inline policies
+    Use access levels to review IAM permissions
+    Configure a strong password policy for your users
+    Enable MFA
+    Use roles for applications that run on Amazon EC2 instances
+    Use roles to delegate permissions
+    Do not share access keys
+    Rotate credentials regularly
+    Remove unnecessary credentials
+    Use policy conditions for extra security
+    Monitor activity in your AWS account
+
+->  There is no off-the-shelf solution or service that the company can use to facilitate the transition of its IT resources from a region to another region.
+    They have to create the resources first in the new region, and then migrate its application and data to the new region.
+
+->  Most of the services that AWS offers are Region specific. But few services, by definition, need to be in a global scope because of the underlying service they offer. 
+    AWS IAM, Amazon CloudFront, Route 53 and WAF are some of the global services
+
+->  You will pay a fee each time you read from or write data stored on the EFS - Infrequent Access storage class
+
+->  Amazon EBS Snapshots are stored incrementally, which means you are billed only for the changed blocks stored
+
+->  Structure of AWS Policy:
+    Version – Specify the version of the policy language that you want to use. As a best practice, use the latest 2012-10-17 version.
+    Statement – Use this main policy element as a container for the following elements. You can include more than one statement in a policy.
+        Sid (Optional) – Include an optional statement ID to differentiate between your statements.
+
+        Effect – Use Allow or Deny to indicate whether the policy allows or denies access.
+
+        Principal (Required in only some circumstances) – If you create a resource-based policy, you must indicate the account, user, role, or federated user to which 
+        you would like to allow or deny access. If you are creating an IAM permissions policy to attach to a user or role, you cannot include this element. The principal is 
+        implied as that user or role.
+
+        Action – Include a list of actions that the policy allows or denies.
+
+        Resource (Required in only some circumstances) – If you create an IAM permissions policy, you must specify a list of resources to which the actions apply. If you 
+        create a resource-based policy, this element is optional. If you do not include this element, then the resource to which the action applies is the resource to 
+        which the policy is attached.
+
+        Condition (Optional) – Specify the circumstances under which the policy grants permission.
+
+->  Cost Allocation Tags in AWS Billing
+    A Cost Allocation Tag is a label that you or AWS assigns to an AWS resource. Each tag consists of a key and a value. For each resource, each tag key must be unique, 
+    and each tag key can have only one value. You can use tags to organize your resources, and cost allocation tags to track your AWS costs on a detailed level
+    ->  For each resource, each tag key must be unique, and each tag key can have only one value
+    ->  You must activate both AWS generated tags and user-defined tags separately before they can appear in Cost Explorer or on a cost allocation report
+
+->  NAT Gateway :   A NAT Gateway or a NAT Instance can be used in a public subnet in your VPC to enable instances in the private subnet to initiate outbound IPv4 traffic to the Internet. 
+                    NAT Gateway is managed by AWS but NAT Instance is managed by you
+
+->  Internet Gateway :  An internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet
+
+->  Just remember that only S3 and DynamoDB support VPC Endpoint Gateway. All other services that support VPC Endpoints use a VPC Endpoint Interface
+
+->  Every AWS account provides its own invoice end of the month. You can get separate invoices for development and production environments by setting up separate AWS accounts for each environment
+
+->  You cannot create separate invoices based on tags.
+
+->  Amazon EFS is a regional service storing data within and across multiple Availability Zones (AZs) for high availability and durability. Amazon EC2 instances can access your file system across AZs, 
+    regions, and VPCs, while on-premises servers can access using AWS Direct Connect or AWS VPN
+
+->  AWS Shield, WAF, and CloudFront with Route 53 help mitigate DDoS attacks
+
+->  A VPC spans all of the Availability Zones in the Region whereas a subnet spans only one Availability Zone in the Region
+
+->  EBS volume can be attached to a single instance in the same Availability Zone whereas EFS file system can be mounted on instances across multiple Availability Zones
+
+->  There is a one-minute minimum charge for Linux based EC2 instances, so this is the correct option
+
+->  Each AWS Region consists of two or more Availability Zones
+
+->  Each Availability Zone (AZ) consists of one or more discrete data centers
+
+->  The AWS account must be able to operate as a standalone account. Only then it can be removed from AWS organizations
+
+->  Amazon EC2 Dedicated Hosts allow you to use your eligible software licenses from vendors such as Microsoft and Oracle on Amazon EC2. An Amazon EC2 Dedicated Host is a physical server 
+    fully dedicated for your use, so you can help address corporate compliance requirements.
+
+->  Partial upfront payment option with standard 3-years term is the most cost effective EC2 reserved instance payment
+
+->  Savings for reserved instances based on payment models:
+    "No upfront payment option with the standard 1-year term" - 36%
+
+    "All upfront payment option with the standard 1-year term" - 40%
+
+    "No upfront payment option with the standard 3-years term" - 56%
+
+    "Partial upfront payment option with the standard 3-years term" - 59%
+
+->  There are three fundamental drivers of cost with AWS: compute, storage, and outbound data transfer. In most cases, there is no charge for inbound data transfer or data transfer between other 
+    AWS services within the same region. Outbound data transfer is aggregated across services and then charged at the outbound data transfer rate.
+
+->  EC2 Instances,DynamoDB and RDS supports reservation to optimize costs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
